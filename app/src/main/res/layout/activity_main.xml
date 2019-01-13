@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="99.99">
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_weight="33.33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goToLarissaCategory"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/larissa" />
+
+        <TextView
+            android:id="@+id/myImageViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView"
+            android:layout_alignTop="@id/imageView"
+            android:layout_alignRight="@id/imageView"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="Νέα της Λάρισας"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.33"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goToThessalyCategory"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/thessaly" />
+
+        <TextView
+            android:id="@+id/myImageViewText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView1"
+            android:layout_alignTop="@id/imageView1"
+            android:layout_alignRight="@id/imageView1"
+            android:layout_alignBottom="@id/imageView1"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:text="Νέα της Θεσσαλίας"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.33"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goToGreeceCategory"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/greece" />
+
+        <TextView
+            android:id="@+id/myImageViewText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView2"
+            android:layout_alignTop="@id/imageView2"
+            android:layout_alignRight="@id/imageView2"
+            android:layout_alignBottom="@id/imageView2"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:text="Νέα της Ελλάδας"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+    </RelativeLayout>
+</LinearLayout>
